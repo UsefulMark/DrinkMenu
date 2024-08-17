@@ -11,8 +11,27 @@
         text-align: center;
         padding: 20px;
       }
+      nav {
+        background-color: #343a40;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+      nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: #ffc107;
+      }
       h1 {
         color: #333;
+        margin-top: 60px; /* Dodano margines na górze, aby uniknąć zakrycia przez pasek nawigacji */
       }
       .gallery {
         display: flex;
@@ -29,7 +48,22 @@
     </style>
   </head>
   <body>
-    <h1>Aperol</h1>
+    <nav>
+      <a href="#aperol">Aperol</a>
+      <a href="#bacardi">Bacardi</a>
+      <a href="#brandy">Brandy</a>
+      <a href="#gin">Gin</a>
+      <a href="#jeger">Jeger</a>
+      <a href="#malibu">Malibu</a>
+      <a href="#martini">Martini</a>
+      <a href="#tequila">Tequila</a>
+      <a href="#whisky">Whisky</a>
+      <a href="#wodka">Wódka</a>
+      <a href="#shoty">Shoty</a>
+      <a href="#special">Special</a>
+    </nav>
+
+    <h1 id="aperol">Aperol</h1>
     <div class="gallery">
       <img src="AperolGallery/aperl_spritz.jpg" alt="Aperol Spritz" />
       <img
@@ -68,7 +102,7 @@
       <img src="AperolGallery/Tropical_Aperol_v1.jpg" alt="Tropical Aperol" />
     </div>
 
-    <h1>Bacardi</h1>
+    <h1 id="bacardi">Bacardi</h1>
     <div class="gallery">
       <img src="BacardiGallery/Acapulco.jpg" alt="Acapulco" />
       <img src="BacardiGallery/Air Mail.jpg" alt="Air Mail" />
@@ -112,7 +146,8 @@
       <img src="BacardiGallery/Sunshine Cocktail.jpg" alt="Sunshine Cocktail" />
       <img src="BacardiGallery/Voodoo.jpg" alt="Voodoo" />
     </div>
-    <h1>Brandy</h1>
+
+    <h1 id="brandy">Brandy</h1>
     <div class="gallery">
       <img src="BrandyGallery/American beauty.jpg" alt="American Beauty" />
       <img
@@ -126,7 +161,8 @@
       />
       <img src="BrandyGallery/Jack rose.jpg" alt="Jack Rose" />
     </div>
-    <h1>Gin</h1>
+
+    <h1 id="gin">Gin</h1>
     <div class="gallery">
       <img src="GinGallery/Baby blue martni.jpg" alt="Baby Blue Martini" />
       <img src="GinGallery/Blue Gin.jpg" alt="Blue Gin" />
@@ -139,7 +175,8 @@
       <img src="GinGallery/Paisley Martini.jpg" alt="Paisley Martini" />
       <img src="GinGallery/Rickey.jpg" alt="Rickey" />
     </div>
-    <h1>Jeger</h1>
+
+    <h1 id="jeger">Jeger</h1>
     <div class="gallery">
       <img src="JegerGallery/Bed of roses.jpg" alt="Bed of Roses" />
       <img src="JegerGallery/Count Mast Negroni.jpg" alt="Count Mast Negroni" />
@@ -162,7 +199,8 @@
       <img src="JegerGallery/Malibu Surfer.jpg" alt="Malibu Surfer" />
       <img src="JegerGallery/Red Jager Sour.jpg" alt="Red Jager Sour" />
     </div>
-    <h1>Malibu</h1>
+
+    <h1 id="malibu">Malibu</h1>
     <div class="gallery">
       <img
         src="MalibuGallery/A day at the beach.jpg"
@@ -214,7 +252,7 @@
       <img src="MalibuGallery/Zielony Ananas.jpg" alt="Zielony Ananas" />
     </div>
 
-    <h1>Martini</h1>
+    <h1 id="martini">Martini</h1>
     <div class="gallery">
       <img
         src="MartniGallery/Citrus Sparkle Martini.jpg"
@@ -233,7 +271,7 @@
       />
     </div>
 
-    <h1>Tequila</h1>
+    <h1 id="tequila">Tequila</h1>
     <div class="gallery">
       <img src="TequilaGallery/Aperol margarita.jpg" alt="Aperol Margarita" />
       <img src="TequilaGallery/Cactus Jack.jpg" alt="Cactus Jack" />
@@ -255,7 +293,7 @@
       />
     </div>
 
-    <h1>Whisky</h1>
+    <h1 id="whisky">Whisky</h1>
     <div class="gallery">
       <img
         src="WhiskyGallery/Apple Whiskey Sour.jpg"
@@ -281,7 +319,7 @@
       <img src="WhiskyGallery/Whisky Iced Tea.jpg" alt="Whisky Iced Tea" />
     </div>
 
-    <h1>Wodka</h1>
+    <h1 id="wodka">Wódka</h1>
     <div class="gallery">
       <img src="WodkaGallery/Blue Cider.jpg" alt="Blue Cider" />
       <img src="WodkaGallery/Blue Lagoon.jpg" alt="Blue Lagoon" />
@@ -295,7 +333,7 @@
       <img src="WodkaGallery/Zielona Ropucha.jpg" alt="Zielona Ropucha" />
     </div>
 
-    <h1>Shoty</h1>
+    <h1 id="shoty">Shoty</h1>
     <div class="gallery">
       <img src="ShotyGallery/Colorful Shot.jpg" alt="Colorful Shot" />
       <img src="ShotyGallery/Green Shot.jpg" alt="Green Shot" />
@@ -316,7 +354,7 @@
       />
       <img src="ShotyGallery/Wściekły pies.jpg" alt="Wściekły Pies" />
     </div>
-    <h1>Special</h1>
+    <h1 id="special">Special</h1>
     <div class="gallery">
       <img
         src="SpecialGallery/Osiemdziesiątka Stasi.jpg"
